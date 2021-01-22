@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to create an IMG element.</p>
+<canvas id="canvas" width="288" height="512"></canvas>
+
+<script>
+function fun(){
+	var canvas=document.getElementById("canvas");
+	var ctx=canvas.getContext("2d");
+	var x = new Image();
+	x.src="pipeNorth.png";
+	ctx.drawImage(x,0,0);
+}
+window.onload=fun;
+</script>
+
+</body>
+</html>
